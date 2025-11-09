@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>猜数字游戏 - 普通模式 + 优雅作弊模式</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>猜数字游戏</h1>
+
+        <!-- 主菜单 -->
+        <div id="menu">
+            <button onclick="startGame(10)">1. 普通模式（10次机会）</button>
+            <button onclick="startGame(-1)">2. 作弊模式（无限次 + 可看答案）</button>
+        </div>
+
+        <!-- 游戏界面 -->
+        <div id="game" class="hidden">
+            <div class="info">
+                <p>请猜一个 <strong>4位数字</strong>（0000~9999）</p>
+                
+                <!-- 作弊按钮放在这里 -->
+                <div id="cheatBtn"></div>
+                
+                <p id="remainText">你还有 <span id="remain">10</span> 次机会</p>
+            </div>
+
+            <div class="input-area">
+                <input type="text" id="guessInput" maxlength="4" placeholder="输入4位数字" autocomplete="off">
+                <button onclick="submitGuess()">提交猜测</button>
+            </div>
+
+            <div id="history"></div>
+            <button onclick="backToMenu()" class="back">返回菜单</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
