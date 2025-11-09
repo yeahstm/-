@@ -4,7 +4,7 @@
 
 全球都能玩，手机电脑一键开猜！
 
-**立即挑战 →** https://yeahstm.github.io/-/
+**立即挑战 →** https://yeahstm.github.io/guess-number/
 
 <img src="https://github.com/yeahstm/-/blob/main/%E6%B8%B8%E6%88%8F%E6%88%AA%E5%9B%BE.png"/>
 
